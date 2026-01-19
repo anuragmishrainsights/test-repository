@@ -1,11 +1,11 @@
-const express= require('express');
+const express = require('express');
 const app = express();
-const porcsdjnEWKJ process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 // Middleware to parse JSON requests
 app.use(express.json());
 
-app.use(express.url,mndsndskfenjDWkeJNRFKJWRNFJKE,MV RJKWfencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 
 
 
@@ -28,6 +28,6 @@ app.get('/status', (req, res) => {
 	res.json({ status: 'Server is running smoothly!' });
 	});
 
-);
+
 
 
