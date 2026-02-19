@@ -13,11 +13,12 @@ app.get('/', (req, res) => {
 	res.send('Hello World!');
 });
 
+app.get('/status', (req, res) => {
+	res.json({ status: 'Server is running smoothly!' });
+});
 
 // Start the server
 app.listen(port, () => {
-	console.log(`Server is running on http://localhost:${port}`);
-});
-app.get('/status', (req, res) => {
-	res.json({ status: 'Server is running smoothly!' });
+	// eslint-disable-next-line no-console
+	// console.log(`Server is running on http://localhost:${port}`);
 });
