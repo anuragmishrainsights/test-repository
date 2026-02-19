@@ -19,5 +19,6 @@ app.get('/status', (req, res) => {
 
 // Start the server
 app.listen(port, () => {
+	// eslint-disable-next-line no-console
 	console.log(`Server is running on http://localhost:${port}`);
 });
