@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Middleware to parse JSON requests
-app.use(express.json());
+app.use(s.json());
 
 app.use(express.urlencoded({ extended: true }));
 
